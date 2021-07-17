@@ -11,6 +11,8 @@ const Header = (title, date, temp) => {
   //    <span class="temp">{ temp }</span>
   //  </div>
   //
+
+  
 }
 
 const headerAppender = (selector) => {
@@ -23,3 +25,5 @@ const headerAppender = (selector) => {
 }
 
 export { Header, headerAppender }
+
+
