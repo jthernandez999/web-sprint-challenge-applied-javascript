@@ -41,6 +41,7 @@ headlineDiv.textContent = article.headline
 imgSrc.src = article.authorPhoto
 authorSpan.textContent = article.authorName
 
+cardDiv.addEventListener('click', () => console.log('clicked on a card'))
 return cardDiv
 
 }
@@ -62,7 +63,9 @@ axios
   console.log('articleData', articleData)
 
 const mappedData = Object.values(articleData);
+console.log('object values', mappedData)
 const flattenedData = mappedData.flat()
+console.log('flattened data', flattenedData)
 
 flattenedData.forEach(article => {
   const newCard = Card(article)
